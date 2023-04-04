@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ReiknivelApplication extends Application {
+public class CalculatorApplication extends Application {
     private Image setIcon(){
         return new Image("icon1.png");
     }
@@ -17,7 +17,7 @@ public class ReiknivelApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("reiknivel-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 400);
 
-        stage.setTitle("Vasareiknir");
+        stage.setTitle("Calculator");
 
         stage.setScene(scene);
         stage.getIcons().add(setIcon());

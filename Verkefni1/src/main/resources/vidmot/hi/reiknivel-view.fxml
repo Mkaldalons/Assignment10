@@ -9,8 +9,8 @@
 
 <VBox id="Vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
       prefWidth="330.0" style="-fx-background-color: SKYBLUE;" xmlns="http://javafx.com/javafx/19"
-      xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.hi.ReiknivelController">
-   <TextField fx:id="uttak" editable="false" prefHeight="64.0" prefWidth="260.0">
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.hi.CalculatorController">
+   <TextField fx:id="result" editable="false" prefHeight="64.0" prefWidth="260.0">
       <VBox.margin>
          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
       </VBox.margin>
@@ -50,7 +50,7 @@
          </font>
       </Button>
       <Button fx:id="13" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-              mnemonicParsing="false" onAction="#virkiHandler" prefHeight="40.0" prefWidth="40.0"
+              mnemonicParsing="false" onAction="#operatorHandler" prefHeight="40.0" prefWidth="40.0"
               style="-fx-background-color: #7FA7C0;" text="*" textFill="#226cb4">
          <HBox.margin>
             <Insets bottom="10.0" left="20.0" right="20.0" top="10.0"/>
@@ -95,7 +95,7 @@
          </font>
       </Button>
       <Button fx:id="11" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-              mnemonicParsing="false" onAction="#virkiHandler" prefHeight="40.0" prefWidth="40.0"
+              mnemonicParsing="false" onAction="#operatorHandler" prefHeight="40.0" prefWidth="40.0"
               style="-fx-background-color: #7FA7C0;" text="-" textFill="#226cb4">
          <HBox.margin>
             <Insets bottom="10.0" left="20.0" right="20.0" top="10.0"/>
@@ -140,7 +140,7 @@
          </font>
       </Button>
       <Button fx:id="10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-              mnemonicParsing="false" onAction="#virkiHandler" prefHeight="40.0" prefWidth="40.0"
+              mnemonicParsing="false" onAction="#operatorHandler" prefHeight="40.0" prefWidth="40.0"
               style="-fx-background-color: #7FA7C0;" text="+" textFill="#226cb4">
          <HBox.margin>
             <Insets bottom="10.0" left="20.0" right="20.0" top="10.0"/>
@@ -155,7 +155,7 @@
          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
       </VBox.margin>
       <Button fx:id="14" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-              mnemonicParsing="false" onAction="#hreinsaHandler" prefHeight="40.0" prefWidth="40.0"
+              mnemonicParsing="false" onAction="#clearHandler" prefHeight="40.0" prefWidth="40.0"
               style="-fx-background-color: #7FA7C0;" text="C" textFill="#226cb4">
          <HBox.margin>
             <Insets bottom="10.0" left="20.0" right="20.0" top="10.0"/>
@@ -185,7 +185,7 @@
          </font>
       </Button>
       <Button fx:id="12" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-              mnemonicParsing="false" onAction="#virkiHandler" prefHeight="40.0" prefWidth="40.0"
+              mnemonicParsing="false" onAction="#operatorHandler" prefHeight="40.0" prefWidth="40.0"
               style="-fx-background-color: #7FA7C0;" text="/" textFill="#226cb4">
          <HBox.margin>
             <Insets bottom="10.0" left="20.0" right="20.0" top="10.0"/>
