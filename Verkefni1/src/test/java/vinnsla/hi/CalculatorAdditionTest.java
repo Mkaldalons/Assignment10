@@ -1,23 +1,24 @@
 package vinnsla.hi;
 
 import junit.framework.TestCase;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class CalculatorAdditionTest extends TestCase {
+public class CalculatorAdditionTest {
     private Calculator calculator;
 
     @Before
     public void createCalculator(){
-        calculator = new Calculator();
+        this.calculator = new Calculator();
     }
 
     @Test
     public void testAddition(){
-        calculator.setOperatorIndex(10);
+        calculator.setOperatorIndex(0);
         calculator.setNum1(2);
         calculator.setNum2(3);
-        assertEquals(5, calculator.calculate());
+        Assert.assertEquals(5, calculator.calculate());
     }
 
 
