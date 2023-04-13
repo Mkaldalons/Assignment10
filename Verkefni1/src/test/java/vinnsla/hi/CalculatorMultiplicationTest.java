@@ -17,4 +17,12 @@ public class CalculatorMultiplicationTest {
         calculator.setNum2(3);
         Assert.assertEquals(15, calculator.calculate());
     }
+    @Test
+    public void testMultiplicationByZero(){
+        calculator.setOperatorIndex(3);
+        calculator.setNum1(0);
+        calculator.setNum2(2);
+        Assert.assertEquals(0, calculator.calculate());
+    }
+
 }
