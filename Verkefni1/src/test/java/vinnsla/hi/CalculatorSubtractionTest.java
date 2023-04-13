@@ -20,4 +20,11 @@ public class CalculatorSubtractionTest {
         calculator.setNum2(2);
         Assert.assertEquals(1, calculator.calculate());
     }
+    @Test
+    public void negativeSubtraction(){
+        calculator.setOperatorIndex(1);
+        calculator.setNum1(3);
+        calculator.setNum2(5);
+        Assert.assertEquals(-2, calculator.calculate());
+    }
 }
