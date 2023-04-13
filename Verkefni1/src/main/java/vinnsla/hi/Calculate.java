@@ -8,5 +8,5 @@ package vinnsla.hi;
  *
  *********************************************************/
 public interface Calculate {
-    int reikna(int a, int b);
+    int calculate(int a, int b);
 }

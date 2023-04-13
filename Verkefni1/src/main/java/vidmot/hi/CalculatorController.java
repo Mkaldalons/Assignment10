@@ -49,15 +49,15 @@ public class CalculatorController {
     public void operatorHandler(ActionEvent actionEvent) {
         int selectedOperator = Integer.parseInt(((Button) actionEvent.getSource()).getId());
         firstNumber = result.getText();
-        calculator.setTala1(Integer.parseInt(firstNumber));
-        calculator.setVirkiIndex(selectedOperator - 10);
+        calculator.setNum1(Integer.parseInt(firstNumber));
+        calculator.setOperatorIndex(selectedOperator - 10);
         switch (selectedOperator) {
             case 10 -> operator = " + ";
             case 11 -> operator = " - ";
             case 12 -> operator = " / ";
             case 13 -> operator = " * ";
         }
-        result.setText(calculator.getTala1()+operator);
+        result.setText(calculator.getNum1()+operator);
     }
 
 
@@ -72,16 +72,16 @@ public class CalculatorController {
      */
     @FXML
 
-    public void jafntogHandler(ActionEvent actionEvent) {
+    public void equalsHandler(ActionEvent actionEvent) {
         String textFieldText = result.getText();
         String[] operands = textFieldText.split(" ");
         int num2 = Integer.parseInt(operands[operands.length-1]);
-        calculator.setTala2(num2);
+        calculator.setNum2(num2);
         String operator = operands[operands.length-2];
         if (operator.equals("/") && num2 == 0) {
-            result.setText("Villa: Það er ekki hægt að deila með 0");
+            result.setText("Error: Division by 0");
         } else {
-            int answer = calculator.jafntOg();
+            int answer = calculator.equals();
             result.setText(textFieldText+" = "+answer);
         }
     }
@@ -93,9 +93,9 @@ public class CalculatorController {
      * @param actionEvent
      */
     @FXML
-    public void inntakTalaActionPerformed(ActionEvent actionEvent) {
-        int tala = Integer.parseInt(((Button) actionEvent.getSource()).getId());
-        result.setText(result.getText() + tala);
+    public void numberInputActionPerformed(ActionEvent actionEvent) {
+        int num = Integer.parseInt(((Button) actionEvent.getSource()).getId());
+        result.setText(result.getText() + num);
 
     }
 
@@ -107,7 +107,7 @@ public class CalculatorController {
     @FXML
     public void clearHandler(ActionEvent actionEvent) {
         result.setText("");
-        calculator.hreinsa();
+        calculator.clear();
     }
 
 }
