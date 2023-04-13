@@ -21,8 +21,10 @@ public class CalculatorAdditionTest {
         Assert.assertEquals(5, calculator.calculate());
     }
 
-
-
-
-
+    @Test
+    public void onlyOneNumber() {
+        calculator.setOperatorIndex(0);
+        calculator.setNum1(2);
+        Assert.assertEquals(calculator.getNum1(), calculator.calculate());
+    }
 }
