@@ -14,7 +14,7 @@ public class CalculatorAdditionTest extends TestCase {
 
     @Test
     public void testAddition(){
-        calculator.setOperatorIndex(Integer.parseInt("+"));
+        calculator.setOperatorIndex(10);
         calculator.setNum1(2);
         calculator.setNum2(3);
         assertEquals(5, calculator.calculate());
