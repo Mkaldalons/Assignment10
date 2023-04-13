@@ -19,4 +19,12 @@ public class CalculatorDivisionTest{
         Assert.assertEquals(2, calculator.calculate());
     }
 
+    @Test (expected = IllegalArgumentException.class)
+    public void testDivisionByZero(){
+        calculator.setOperatorIndex(2);
+        calculator.setNum1(3);
+        calculator.setNum2(0);
+        calculator.calculate();
+    }
+
 }
