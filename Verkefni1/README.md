@@ -16,6 +16,7 @@ Both the implementation and the tests are in Java packages vidmot.hi and vinnsla
 Maven:
 - `mvn clean` cleans all implementation classes.
 - `mvn compile` compiles all implementation classes.
+- `mvn site` generates documentation site
 - `mvn test` runs all test cases (i.e. all classes with a name that either starts with `Test` or ends with `Test`, `Tests`, or `TestCase`).
 - `mvn assembly:single` creates a fat jar file containing the compiled classes.
 - `mvn exec:java` runs CalculatorApplication
