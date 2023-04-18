@@ -1,6 +1,5 @@
 package vinnsla.hi;
 
-import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
