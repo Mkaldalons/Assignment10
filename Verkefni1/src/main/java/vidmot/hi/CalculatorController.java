@@ -60,9 +60,6 @@ public class CalculatorController {
         result.setText(calculator.getNum1()+operator);
     }
 
-
-
-
     /**
      * Birtir jöfnuna sem notandi hefur slegið
      * inn ásamt því að skila niðurstöðu reikninga
