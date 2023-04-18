@@ -1,4 +1,0 @@
---patch-module
-is.hi=_
---add-reads
-is.hi=ALL-UNNAMED
